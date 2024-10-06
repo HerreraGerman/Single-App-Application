@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ProyectN() {
+function ProjectDetails() {
     return(
         <div className="proyect">
             <h1>Proyects! W.I.P</h1>
@@ -8,4 +8,4 @@ function ProyectN() {
     );
 }
 
-export default ProyectN;
+export default ProjectDetails;

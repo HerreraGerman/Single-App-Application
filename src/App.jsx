@@ -6,11 +6,11 @@ import {
   Outlet,
 } from "react-router-dom";
 import './styles/App.css';
-import ErrorPage from "./error-page";
-import Home from './routes/home';
-import MyProyects from './routes/myProyects';
-import MyStories from './routes/myStories';
-import Settings from './routes/settings';
+import ErrorPage from "./pages/ErrorPage";
+import Home from './pages/Home';
+import MyProyects from './pages/MyProjects';
+import MyStories from './pages/MyStories';
+import Settings from './pages/Settings';
 import NavBar from './components/navBar';
 
 const AppLayout = () => (
@@ -35,13 +35,18 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
       },
       {
-        path: "myProyects",
+        path: "myproyects",
         element: <MyProyects />,
         errorElement: <ErrorPage />,
       },
       {
-        path: "myStories",
+        path: "mystories",
         element: <MyStories />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "epics",
+        element: <Epics />,
         errorElement: <ErrorPage />,
       },
       {

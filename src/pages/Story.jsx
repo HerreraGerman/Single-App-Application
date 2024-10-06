@@ -1,6 +1,6 @@
 import React from 'react';
 
-function StoryJ() {
+function Story() {
     return(
         <div className="story">
             <h1>Story! W.I.P</h1>
@@ -8,4 +8,4 @@ function StoryJ() {
     );
 }
 
-export default StoryJ;
+export default Story;
